@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
-using SimplCommerce.Infrastructure.Data;
-using SimplCommerce.Infrastructure;
 using SimplCommerce.Module.Core.Models;
+using SimplCommerce.Infrastructure.Data;
 
 namespace SimplCommerce.Module.Core.Extensions
 {
@@ -60,8 +59,7 @@ namespace SimplCommerce.Module.Core.Extensions
                 FullName = "Guest",
                 UserGuid = userGuid.Value,
                 Email = dummyEmail,
-                UserName = dummyEmail,
-                Culture = GlobalConfiguration.DefaultCulture
+                UserName = dummyEmail
             };
             var abc = await _userManager.CreateAsync(_currentUser, "1qazZAQ!");
             await _userManager.AddToRoleAsync(_currentUser, "guest");
