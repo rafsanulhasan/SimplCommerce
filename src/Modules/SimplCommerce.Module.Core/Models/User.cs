@@ -43,7 +43,5 @@ namespace SimplCommerce.Module.Core.Models
         public IList<UserRole> Roles { get; set; } =  new List<UserRole>();
 
         public IList<CustomerGroupUser> CustomerGroups { get; set; } = new List<CustomerGroupUser>();
-
-        public string Culture { get; set; }
     }
 }

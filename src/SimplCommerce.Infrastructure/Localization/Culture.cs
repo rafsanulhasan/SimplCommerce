@@ -15,6 +15,8 @@ namespace SimplCommerce.Infrastructure.Localization
         [StringLength(450)]
         public string Name { get; set; }
 
+        public bool IsDefault { get; set; }
+
         public IList<Resource> Resources { get; set; }
     }
 }
