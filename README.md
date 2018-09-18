@@ -22,7 +22,7 @@
 #### Prerequisites
 
 - SQL Server
-- [Visual Studio 2017 version >= 15.8 with .NET Core SDK 2.1.402 OR 18.8.4 (SDK included)](https://www.microsoft.com/net/download/dotnet-core/2.1)
+- [Visual Studio 2017 version >= 15.8 with .NET Core SDK 2.1.402 & .NET Core Runtime 2.1.4 OR 18.8.4 (SDK included)](https://www.microsoft.com/net/download/dotnet-core/2.1)
 - Node.js (LTS)
 
 #### Steps to run
